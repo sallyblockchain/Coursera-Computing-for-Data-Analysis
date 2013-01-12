@@ -22,9 +22,10 @@ complete <- function(directory, id = 1:332) {
         j = 1
         for(i in id){
             data <- getmonitor(i, directory)
-            sulfatelen <- dim(data[!is.na(data$sulfate), ])[1]
-            nitratelen <- dim(data[!is.na(data$nitrate), ])[1]
-            idlen <- min(sulfatelen, nitratelen)
+            #sulfatelen <- dim(data[!is.na(data$sulfate), ])[1]
+            #nitratelen <- dim(data[!is.na(data$nitrate), ])[1]
+            idlen <- sum(complete.cases(data))
+            #idlen <- min(sulfatelen, nitratelen)
             completedata[j] <- idlen
             j <- j + 1
         }
