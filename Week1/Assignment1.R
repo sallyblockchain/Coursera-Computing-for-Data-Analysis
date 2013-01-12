@@ -1,4 +1,5 @@
 data = read.csv(file = "/.../Computing for Data Analysis/Week1/hw1_data.csv")
+# "..." is the directory in your computer; masked here for privacy
 head(data)
 # Q1(D): Ozone Solar.R Wind Temp Month Day
 # Q2(C):
