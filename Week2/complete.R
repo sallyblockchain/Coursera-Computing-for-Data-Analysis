@@ -15,8 +15,8 @@ complete <- function(directory, id = 1:332) {
     
         id <- as.integer(id)
         if(grep("specdata", directory) == 1){
-            directory <- "/Users/vanilla_nadal/Desktop/Computing for Data Analysis/Week2/specdata/"
-        }
+            directory <- "/.../Computing for Data Analysis/Week2/specdata/"
+        } # "..." is the directory in your computer; masked here for privacy
         len <- length(id)
         completedata <- rep(0, len)
         j = 1

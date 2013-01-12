@@ -10,8 +10,8 @@ corr <- function(directory, threshold = 0) {
         ## Return a numeric vector of correlations
     
         if(grep("specdata", directory) == 1){
-            directory <- "/Users/vanilla_nadal/Desktop/Computing for Data Analysis/Week2/specdata/"
-        }
+            directory <- "/.../Computing for Data Analysis/Week2/specdata/"
+        } # "..." is the directory in your computer; masked here for privacy
         completetable <- complete("specdata", 1:332)
         nobs <- completetable$nobs
         ids <- completetable$id[nobs > threshold]

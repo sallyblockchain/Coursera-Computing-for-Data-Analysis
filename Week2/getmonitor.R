@@ -15,8 +15,8 @@ getmonitor <- function(id, directory, summarize = FALSE) {
         ## Your code here
         id <- as.integer(id)
         if(grep("specdata", directory) == 1){
-            directory <- "/Users/vanilla_nadal/Desktop/Computing for Data Analysis/Week2/specdata/"
-        }
+            directory <- "/.../Computing for Data Analysis/Week2/specdata/"
+        } # "..." is the directory in your computer; masked here for privacy
         if(id < 10){
             newID <- paste("00", id, sep = "")
             fileID <- paste(newID, ".csv", sep = "") # 001.csv
