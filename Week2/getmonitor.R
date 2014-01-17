@@ -1,5 +1,3 @@
-# data <- read.csv(file="/Users/vanilla_nadal/Desktop/Computing for Data Analysis/Week2/specdata/001.csv")
-
 getmonitor <- function(id, directory, summarize = FALSE) {
         ## 'id' is a vector of length 1 indicating the monitor ID
         ## number. The user can specify 'id' as either an integer, a
